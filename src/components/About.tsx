@@ -1,15 +1,13 @@
-
 import React from 'react';
 import { Shield, Brain, Code, Users } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    { name: "Python Development", level: 85 },
-    { name: "AI/ML Integration", level: 75 },
-    { name: "Cybersecurity Fundamentals", level: 70 },
-    { name: "Log Analysis & SIEM", level: 80 },
-    { name: "Privacy Engineering", level: 75 },
-    { name: "System Architecture", level: 70 }
+    { name: "Python • Streamlit • Pandas • Numpy • Matplotlib • Altair", level: 85 },
+    { name: "Log Analysis • Threat Detection • Anomaly Detection", level: 80 },
+    { name: "GRC • IAM • Compliance (HIPAA, NIST)", level: 75 },
+    { name: "Git • GitHub • Jupyter • CLI Tools", level: 80 },
+    { name: "AI Summary Design • Local-First Architecture • Privacy-First Security", level: 75 }
   ];
 
   const values = [
