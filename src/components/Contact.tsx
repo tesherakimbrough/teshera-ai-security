@@ -27,10 +27,10 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-black">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Let's Connect</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Let's Build Secure, Intelligent Tools Together</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Ready to discuss AI security projects, consulting opportunities, or potential collaborations? 
-            I'd love to hear from you.
+            Whether you're hiring for an AI security role, looking to collaborate on a privacy-first product,
+            or seeking a consultant with real hands-on experience — I'd love to connect.
           </p>
         </div>
 
@@ -39,8 +39,8 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              Whether you're looking for a cybersecurity consultant, AI developer, or someone to help build privacy-first solutions, 
-              I'm here to help bring your vision to life.
+              Ready to build something meaningful together? Let's discuss how we can create technology that 
+              respects privacy while delivering powerful functionality.
             </p>
             
             <div className="space-y-4">
@@ -65,10 +65,10 @@ const Contact = () => {
             <div className="mt-8 p-6 bg-gray-900 rounded-lg border border-gray-800">
               <h4 className="text-lg font-semibold text-white mb-2">Available For</h4>
               <ul className="text-gray-300 space-y-1">
-                <li>• AI Security Consulting</li>
-                <li>• Full-time Opportunities</li>
-                <li>• Speaking Engagements</li>
-                <li>• Technical Collaborations</li>
+                <li>• Full-Time AI & Security Roles</li>
+                <li>• Privacy-First SaaS Development</li>
+                <li>• Security Consulting & GRC Support</li>
+                <li>• Technical Collaboration & Mentorship</li>
               </ul>
             </div>
           </div>
