@@ -5,61 +5,54 @@ import { Download, ExternalLink } from 'lucide-react';
 const Resume = () => {
   const experience = [
     {
-      title: "Senior AI Security Engineer",
-      company: "TechCorp Solutions",
-      period: "2022 - Present",
-      description: "Led development of AI-powered cybersecurity solutions, reducing threat detection time by 60% while maintaining zero false positives."
+      title: "Self-Driven Learning & Development",
+      company: "Personal Projects",
+      period: "2023 - Present",
+      description: "Currently self-training in cybersecurity and AI, building hands-on projects that demonstrate threat detection, log analysis, and secure development practices. Focus on privacy-first security tools and AI integration for SecOps."
     },
     {
-      title: "Cybersecurity Developer",
-      company: "SecureNet Inc.",
-      period: "2020 - 2022",
-      description: "Built privacy-first security monitoring tools and implemented end-to-end encryption protocols for enterprise clients."
-    },
-    {
-      title: "Machine Learning Engineer",
-      company: "DataSafe Technologies",
-      period: "2018 - 2020",
-      description: "Developed local-first ML models for sensitive data processing, ensuring compliance with GDPR and CCPA regulations."
+      title: "AI & Cybersecurity Project Development",
+      company: "Independent Work",
+      period: "2023 - Present",
+      description: "Developing practical security tools including HavenAI (local-first AI log analysis), ThreatLens (real-time monitoring), and Sentinel Copilot (AI-assisted log triage) to demonstrate real-world application of cybersecurity concepts."
     }
   ];
 
   const education = [
     {
-      degree: "Master of Science in Cybersecurity",
-      school: "Stanford University",
-      year: "2018"
-    },
-    {
-      degree: "Bachelor of Science in Computer Science",
-      school: "UC Berkeley",
-      year: "2016"
+      degree: "Self-Directed Cybersecurity & AI Training",
+      school: "Online Learning & Hands-On Projects",
+      year: "2023 - Present"
     }
   ];
 
-  const certifications = [
-    "Certified Information Systems Security Professional (CISSP)",
-    "Certified Ethical Hacker (CEH)",
-    "AWS Certified Security - Specialty",
-    "Google Cloud Professional Machine Learning Engineer"
+  const skills = [
+    "Python Development",
+    "AI/ML Integration",
+    "Log Analysis & SIEM",
+    "Streamlit Applications",
+    "Privacy-First Development",
+    "Threat Detection",
+    "Security Monitoring",
+    "Local-First Applications"
   ];
 
   return (
     <section id="resume" className="py-20 bg-gray-900">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Resume</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Experience & Skills</h2>
           <p className="text-xl text-gray-400 mb-8">
-            A comprehensive overview of my professional experience and achievements.
+            Self-driven learning journey focused on building practical cybersecurity and AI solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2">
               <Download size={20} />
-              Download PDF
+              Download Resume
             </button>
             <button className="border border-gray-600 text-white px-6 py-3 rounded-lg font-semibold hover:border-gray-400 hover:bg-gray-800 transition-all duration-200 flex items-center gap-2">
               <ExternalLink size={20} />
-              View Full Resume
+              View LinkedIn
             </button>
           </div>
         </div>
@@ -82,10 +75,10 @@ const Resume = () => {
             </div>
           </div>
 
-          {/* Education & Certifications */}
+          {/* Education & Skills */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Education</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Learning Path</h3>
               <div className="space-y-4">
                 {education.map((edu, index) => (
                   <div key={index} className="bg-black/50 backdrop-blur-sm border border-gray-800 rounded-lg p-4">
@@ -98,11 +91,11 @@ const Resume = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Certifications</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Core Skills</h3>
               <div className="space-y-2">
-                {certifications.map((cert, index) => (
+                {skills.map((skill, index) => (
                   <div key={index} className="bg-black/50 backdrop-blur-sm border border-gray-800 rounded-lg p-3">
-                    <p className="text-gray-300 text-sm">{cert}</p>
+                    <p className="text-gray-300 text-sm">{skill}</p>
                   </div>
                 ))}
               </div>

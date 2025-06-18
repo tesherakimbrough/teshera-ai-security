@@ -4,12 +4,12 @@ import { Shield, Brain, Code, Users } from 'lucide-react';
 
 const About = () => {
   const skills = [
-    { name: "Artificial Intelligence", level: 95 },
-    { name: "Cybersecurity", level: 90 },
-    { name: "Python Development", level: 95 },
-    { name: "Machine Learning", level: 85 },
-    { name: "Privacy Engineering", level: 90 },
-    { name: "System Architecture", level: 80 }
+    { name: "Python Development", level: 85 },
+    { name: "AI/ML Integration", level: 75 },
+    { name: "Cybersecurity Fundamentals", level: 70 },
+    { name: "Log Analysis & SIEM", level: 80 },
+    { name: "Privacy Engineering", level: 75 },
+    { name: "System Architecture", level: 70 }
   ];
 
   const values = [
@@ -30,8 +30,8 @@ const About = () => {
     },
     {
       icon: <Users className="w-6 h-6 text-red-400" />,
-      title: "User-Centric",
-      description: "Designing technology that serves people, not the other way around."
+      title: "Self-Driven",
+      description: "Continuously learning and building real projects to demonstrate practical cybersecurity skills."
     }
   ];
 
@@ -42,10 +42,10 @@ const About = () => {
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">About Me</h2>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              I'm a passionate AI and cybersecurity developer with a mission to create technology that respects user privacy while delivering powerful functionality. With expertise in Python, machine learning, and security architecture, I build solutions that protect what matters most.
+              I'm a self-driven developer passionate about AI and cybersecurity, focused on creating technology that respects user privacy while delivering powerful functionality. Through hands-on projects, I'm building expertise in Python, AI integration, and security architecture.
             </p>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              My work focuses on local-first applications, privacy-preserving AI, and cybersecurity tools that help organizations stay secure without compromising user data. I believe the future of technology should be both powerful and private.
+              My work demonstrates practical applications of AI in cybersecurity through projects like HavenAI, ThreatLens, and Sentinel Copilot. I believe in learning by building—creating real tools that solve genuine security challenges while maintaining transparency and privacy.
             </p>
             
             <div className="space-y-4">

@@ -23,13 +23,13 @@ const Projects = () => {
       status: "Active"
     },
     {
-      title: "Security Log Analyzer",
-      description: "A lightweight CLI-based tool for scanning logs and detecting anomalies. Early experiment in Python using regex and basic alerting logic.",
+      title: "Sentinel Copilot",
+      description: "AI-Assisted Log Triage tool exploring how AI can assist with security log review and alert triage. Built with Python and Streamlit, offering mock summaries and smart filtering to help analysts identify key patterns quickly.",
       icon: <Terminal className="w-8 h-8 text-purple-400" />,
-      tags: ["Python", "CLI", "Logs", "Regex"],
-      github: "https://github.com/tesherakimbrough/Security-Log-Analyzer",
+      tags: ["AI", "SecOps", "Python", "Streamlit", "Log Analysis"],
+      github: "https://github.com/tesherakimbrough/Sentinel-Copilot",
       demo: null,
-      status: "Archived"
+      status: "In Progress"
     }
   ];
 
@@ -39,7 +39,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            A showcase of my work in AI and cybersecurity, focusing on privacy-first and secure solutions.
+            Self-driven projects demonstrating AI integration and cybersecurity skills, built to solve real-world security challenges.
           </p>
         </div>
         
@@ -56,6 +56,8 @@ const Projects = () => {
                   <span className={`text-xs px-2 py-1 rounded-full ${
                     project.status === 'Active' 
                       ? 'bg-green-500/20 text-green-400' 
+                      : project.status === 'In Progress'
+                      ? 'bg-blue-500/20 text-blue-400'
                       : 'bg-gray-500/20 text-gray-400'
                   }`}>
                     {project.status}
