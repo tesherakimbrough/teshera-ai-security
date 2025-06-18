@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Download, ExternalLink } from 'lucide-react';
 
@@ -6,7 +7,7 @@ const Resume = () => {
     {
       title: "AI & Cybersecurity Project Development",
       company: "Independent Work",
-      period: "2025 - Present",
+      period: "Jun 2025 - Present",
       description: "Building self-driven projects focused on solving real-world cybersecurity challenges using AI and automation. Developed tools including HavenAI Secure (local-first log analysis), ThreatLens (real-time monitoring), and Sentinel Copilot (AI-assisted log triage). These projects demonstrate privacy-first design, secure development practices, and practical SecOps applications."
     },
     {
@@ -39,7 +40,7 @@ const Resume = () => {
     {
       degree: "Self-Guided Cybersecurity & AI Learning",
       school: "Independent Study & Hands-On Projects",
-      year: "2025 - Present",
+      year: "Jun 2025 - Present",
       description: "Learning by building. Focused on cybersecurity fundamentals, secure coding, threat detection, and AI/ML for security through practical application and continuous self-study."
     }
   ];
