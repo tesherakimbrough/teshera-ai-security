@@ -30,9 +30,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/8bc7a535-32e4-42f0-9b01-abde77bec01b.png" 
+              src="/teshera-header-logo.png" 
               alt="Teshera SecureWorks Logo" 
-              className="h-6 w-auto transition-opacity duration-200 hover:opacity-80"
+              className="h-7 w-auto transition-opacity duration-200 hover:opacity-80"
             />
           </a>
           
