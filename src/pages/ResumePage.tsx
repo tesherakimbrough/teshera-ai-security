@@ -119,14 +119,16 @@ const ResumePage = () => {
         </div>
       </div>
 
-      {/* Print styles */}
-      <style jsx>{`
-        @media print {
-          body { margin: 0; padding: 0; }
-          .print\\:hidden { display: none !important; }
-          img { max-width: 100% !important; height: auto !important; }
-        }
-      `}</style>
+      {/* Print styles using standard CSS */}
+      <style dangerouslySetInnerHTML={{
+        __html: `
+          @media print {
+            body { margin: 0; padding: 0; }
+            .print\\:hidden { display: none !important; }
+            img { max-width: 100% !important; height: auto !important; }
+          }
+        `
+      }} />
     </div>
   );
 };
