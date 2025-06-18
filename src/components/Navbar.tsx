@@ -28,7 +28,13 @@ const Navbar = () => {
     }`}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <div className="font-bold text-xl text-white">TK</div>
+          <a href="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/d8bd879e-5638-4c9e-9c65-ea785b946924.png" 
+              alt="Teshera SecureWorks Logo" 
+              className="h-8 w-auto transition-opacity duration-200 hover:opacity-80"
+            />
+          </a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
