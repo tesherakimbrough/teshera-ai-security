@@ -1,27 +1,11 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Mail, Linkedin, Send } from 'lucide-react';
+import { useContactForm } from '@/hooks/useContactForm';
+import LoadingSpinner from '@/components/ui/loading-spinner';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
-  };
+  const { formData, errors, isSubmitting, handleChange, handleSubmit } = useContactForm();
 
   return (
     <section id="contact" className="py-20 bg-black">
@@ -73,12 +57,12 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Enhanced Contact Form */}
           <div>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6" noValidate>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                  Name
+                  Name <span className="text-red-400">*</span>
                 </label>
                 <input
                   type="text"
@@ -86,14 +70,22 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                  className={`w-full bg-gray-900 border rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors ${
+                    errors.name ? 'border-red-500' : 'border-gray-800'
+                  }`}
                   required
+                  aria-describedby={errors.name ? 'name-error' : undefined}
                 />
+                {errors.name && (
+                  <p id="name-error" className="mt-1 text-sm text-red-400" role="alert">
+                    {errors.name}
+                  </p>
+                )}
               </div>
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                  Email
+                  Email <span className="text-red-400">*</span>
                 </label>
                 <input
                   type="email"
@@ -101,14 +93,22 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                  className={`w-full bg-gray-900 border rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors ${
+                    errors.email ? 'border-red-500' : 'border-gray-800'
+                  }`}
                   required
+                  aria-describedby={errors.email ? 'email-error' : undefined}
                 />
+                {errors.email && (
+                  <p id="email-error" className="mt-1 text-sm text-red-400" role="alert">
+                    {errors.email}
+                  </p>
+                )}
               </div>
               
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                  Subject
+                  Subject <span className="text-red-400">*</span>
                 </label>
                 <input
                   type="text"
@@ -116,14 +116,22 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors"
+                  className={`w-full bg-gray-900 border rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors ${
+                    errors.subject ? 'border-red-500' : 'border-gray-800'
+                  }`}
                   required
+                  aria-describedby={errors.subject ? 'subject-error' : undefined}
                 />
+                {errors.subject && (
+                  <p id="subject-error" className="mt-1 text-sm text-red-400" role="alert">
+                    {errors.subject}
+                  </p>
+                )}
               </div>
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                  Message
+                  Message <span className="text-red-400">*</span>
                 </label>
                 <textarea
                   id="message"
@@ -131,18 +139,40 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className="w-full bg-gray-900 border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                  className={`w-full bg-gray-900 border rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors resize-none ${
+                    errors.message ? 'border-red-500' : 'border-gray-800'
+                  }`}
                   required
+                  aria-describedby={errors.message ? 'message-error' : undefined}
                 ></textarea>
+                {errors.message && (
+                  <p id="message-error" className="mt-1 text-sm text-red-400" role="alert">
+                    {errors.message}
+                  </p>
+                )}
               </div>
               
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2"
+                disabled={isSubmitting}
+                className="w-full bg-blue-600 hover:bg-blue-700 disabled:bg-blue-800 disabled:cursor-not-allowed text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <Send size={20} />
-                Send Message
+                {isSubmitting ? (
+                  <>
+                    <LoadingSpinner size="sm" className="border-white border-t-transparent" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send size={20} />
+                    Send Message
+                  </>
+                )}
               </button>
+              
+              <p className="text-xs text-gray-500 text-center">
+                Note: To activate the form, replace the Formspree endpoint in the contact form hook with your own.
+              </p>
             </form>
           </div>
         </div>
