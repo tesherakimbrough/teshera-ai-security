@@ -42,7 +42,7 @@ const About = () => {
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">About Me</h2>
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              I'm a self-driven developer passionate about AI and cybersecurity, focused on creating technology that respects user privacy while delivering powerful functionality. Through hands-on projects, I'm building expertise in Python, AI integration, and security architecture.
+              I'm a self-driven developer passionate about AI and cybersecurity, focused on creating technology that respects user privacy while delivering powerful functionality. With professional experience in GRC and IAM, I'm now building expertise in Python, AI integration, and security architecture through hands-on projects.
             </p>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
               My work demonstrates practical applications of AI in cybersecurity through projects like HavenAI, ThreatLens, and Sentinel Copilot. I believe in learning by building—creating real tools that solve genuine security challenges while maintaining transparency and privacy.

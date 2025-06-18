@@ -15,6 +15,12 @@ const Resume = () => {
       company: "Independent Work",
       period: "2023 - Present",
       description: "Developing practical security tools including HavenAI (local-first AI log analysis), ThreatLens (real-time monitoring), and Sentinel Copilot (AI-assisted log triage) to demonstrate real-world application of cybersecurity concepts."
+    },
+    {
+      title: "GRC & IAM Analyst",
+      company: "Professional Work",
+      period: "2021 - 2022",
+      description: "Conducted security audits and access reviews aligned with ISO 27001 and NIST 800-53. Maintained identity and access controls (IAM) using tools like Okta and Azure AD. Assisted in writing and reviewing GRC documentation for HIPAA and GDPR compliance. Worked with teams to assess third-party risk and enforce security policies."
     }
   ];
 
@@ -34,7 +40,11 @@ const Resume = () => {
     "Privacy-First Development",
     "Threat Detection",
     "Security Monitoring",
-    "Local-First Applications"
+    "Local-First Applications",
+    "Governance, Risk, and Compliance (GRC)",
+    "Identity & Access Management (IAM)",
+    "Security Audits",
+    "Risk & Policy Documentation"
   ];
 
   return (
