@@ -24,7 +24,7 @@ const ResumePage = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* SEO Meta Information */}
-      <title>Teshera Kimbrough - AI & Cybersecurity Resume</title>
+      <title>Teshera Kimbrough – AI Security Engineer Resume</title>
       
       {/* Header with navigation */}
       <div className="bg-gray-900 border-b border-gray-800 print:hidden">
@@ -57,8 +57,8 @@ const ResumePage = () => {
       {/* Resume content */}
       <div className="max-w-5xl mx-auto px-6 py-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Teshera Kimbrough</h1>
-          <p className="text-xl text-gray-400 mb-6">AI & Cybersecurity Resume</p>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">Teshera Kimbrough – AI Security Engineer</h1>
+          <p className="text-xl text-gray-400 mb-6">Resume & Experience</p>
         </div>
 
         {/* PDF Viewer Section */}
