@@ -19,19 +19,19 @@ const Resume = () => {
     {
       title: "Technology Operations Analyst",
       company: "Wells Fargo",
-      period: "Nov 2022 - May 2024",
+      period: "Nov 2022 - Jun 2024",
       description: "Managed IAM and SoD controls across 20+ internal apps. Automated ServiceNow RBAC workflows. Partnered with security engineers on policy design for audit readiness."
     },
     {
       title: "Cybersecurity Analyst",
       company: "BlueLine Technologies",
-      period: "Sep 2021 - Mar 2022",
+      period: "Sep 2021 - Apr 2022",
       description: "Responded to alerts, triaged endpoint issues, and reviewed IDS logs. Created Python scripts for custom Splunk parsing. Supported SOC team with threat detection and documentation."
     },
     {
       title: "Technical Support Advisor",
       company: "Apple",
-      period: "Jun 2017 - Jul 2021",
+      period: "Jun 2017 - Aug 2021",
       description: "Provided tier 1 and 2 support for Apple hardware/software. Acted as Subject Matter Expert (SME) for education/business cases. Led quality improvement initiatives and trained junior staff."
     }
   ];
