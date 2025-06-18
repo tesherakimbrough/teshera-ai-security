@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Download, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Resume = () => {
   const experience = [
@@ -69,15 +69,13 @@ const Resume = () => {
             Self-driven learning journey focused on building practical cybersecurity and AI solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="https://resume.co/@hwG0o0FzARJ2NjBPzF4i?password=DoXaTidDaxWy"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link 
+              to="/resume"
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2 justify-center"
             >
               <Download size={20} />
               Download Resume
-            </a>
+            </Link>
             <button className="border border-gray-600 text-white px-6 py-3 rounded-lg font-semibold hover:border-gray-400 hover:bg-gray-800 transition-all duration-200 flex items-center gap-2">
               <ExternalLink size={20} />
               View LinkedIn
