@@ -1,11 +1,10 @@
-
 # Teshera Kimbrough - AI & Cybersecurity Portfolio
 
 A modern, responsive portfolio website showcasing expertise in AI and cybersecurity, built with React, TypeScript, and Tailwind CSS.
 
 ## 🌟 Live Demo
 
-**URL**: https://lovable.dev/projects/38ecebcc-c67f-4997-979c-8d59a9a16c46
+**URL**: https://tesherakimbrough.dev
 
 ## 🚀 Features
 
