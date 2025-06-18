@@ -32,7 +32,7 @@ const Navbar = () => {
             <img 
               src="/teshera-header-logo.png" 
               alt="Teshera SecureWorks Logo" 
-              className="h-7 w-auto transition-opacity duration-200 hover:opacity-80"
+              className="h-8 w-auto transition-opacity duration-200 hover:opacity-80"
             />
           </a>
           
