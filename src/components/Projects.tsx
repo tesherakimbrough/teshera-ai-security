@@ -6,7 +6,7 @@ const Projects = () => {
   const projects = [
     {
       title: "HavenAI Secure",
-      description: "Local-first AI log analyzer that runs entirely in the browser. Detects suspicious log patterns using client-side AI models for security teams who value privacy.",
+      description: "Local-first AI log analyzer that runs entirely in the browser. Built to detect suspicious log patterns using client-side AI models, ensuring complete data privacy for security teams.",
       icon: <Brain className="w-8 h-8 text-blue-400" />,
       tags: ["AI", "Privacy", "Security", "Local-First", "Frontend"],
       github: "https://github.com/tesherakimbrough/HavenAI",
@@ -15,7 +15,7 @@ const Projects = () => {
     },
     {
       title: "ThreatLens",
-      description: "Real-time cybersecurity monitoring tool built with Streamlit. Parses and visualizes log files to simulate incident response and threat detection.",
+      description: "Real-time cybersecurity monitoring tool built with Streamlit. Parses and visualizes log files to simulate incident response workflows and threat detection patterns.",
       icon: <Shield className="w-8 h-8 text-red-400" />,
       tags: ["Cybersecurity", "Monitoring", "Python", "Streamlit"],
       github: "https://github.com/tesherakimbrough/ThreatLens",
@@ -24,7 +24,7 @@ const Projects = () => {
     },
     {
       title: "Sentinel Copilot",
-      description: "AI-Assisted Log Triage tool exploring how AI can assist with security log review and alert triage. Built with Python and Streamlit, offering mock summaries and smart filtering to help analysts identify key patterns quickly.",
+      description: "AI-assisted log triage tool exploring intelligent security analysis. Built with Python and Streamlit, featuring mock summaries and smart filtering to help analysts identify critical patterns efficiently.",
       icon: <Terminal className="w-8 h-8 text-purple-400" />,
       tags: ["AI", "SecOps", "Python", "Streamlit", "Log Analysis"],
       github: "https://github.com/tesherakimbrough/Sentinel-Copilot",
@@ -39,7 +39,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Self-driven projects demonstrating AI integration and cybersecurity skills, built to solve real-world security challenges.
+            Security tools and applications demonstrating AI integration and cybersecurity expertise, built to solve real-world challenges.
           </p>
         </div>
         

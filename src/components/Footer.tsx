@@ -13,7 +13,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-white mb-4">Teshera Kimbrough</h3>
             <p className="text-gray-400 leading-relaxed">
               AI & Cybersecurity Developer focused on privacy-first, local-first applications.
-              Honest work. Real skills. Built to protect what matters.
+              Building secure solutions. Real skills. Ready to contribute.
             </p>
           </div>
           
@@ -29,7 +29,10 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Connect</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Let's Connect</h4>
+            <p className="text-gray-400 mb-4">
+              🔍 Open to full-time roles, contract work, and collaborations in AI Security, Privacy, or Infrastructure. Let's build.
+            </p>
             <div className="flex gap-4">
               <a
                 href="https://github.com/tesherakimbrough"

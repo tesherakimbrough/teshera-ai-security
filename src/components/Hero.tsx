@@ -17,7 +17,7 @@ const Hero = () => {
             Blending GRC, IAM, and AI into usable tools for the future of security.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a
               href="#projects"
               className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200 flex items-center justify-center gap-2 group"
@@ -29,8 +29,15 @@ const Hero = () => {
               href="#contact"
               className="border border-gray-600 text-white px-8 py-4 rounded-lg font-semibold hover:border-gray-400 hover:bg-gray-900 transition-all duration-200"
             >
-              Hire or Collaborate
+              Let's Build Together
             </a>
+          </div>
+
+          <div className="mb-8 p-4 bg-gray-900/50 rounded-lg border border-gray-800">
+            <p className="text-lg text-blue-400 font-medium mb-2">🔍 Open to Opportunities</p>
+            <p className="text-gray-300">
+              Available for full-time roles, contract work, and collaborations in AI Security, Privacy, or Infrastructure. Let's build something meaningful.
+            </p>
           </div>
           
           <div className="flex justify-center gap-6">
