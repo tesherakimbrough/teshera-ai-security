@@ -4,9 +4,9 @@ import { ArrowLeft, Download, ExternalLink, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ResumePage = () => {
-  const pdfUrl = 'https://tesherakimbrough.dev/Teshera%20Kimbrough%20AI%20Resume.pdf';
+  const pdfUrl = 'https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/public/Teshera%20Kimbrough%20AI%20Resume.pdf';
 
-  const handleDownloadPDF = () => {
+  const handleOpenPDF = () => {
     window.open(pdfUrl, '_blank', 'noopener,noreferrer');
   };
 
@@ -25,28 +25,24 @@ const ResumePage = () => {
             </Link>
             
             <div className="flex items-center gap-4">
-              <a
-                href={pdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleOpenPDF}
+                className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors"
                 aria-label="Download Teshera Kimbrough Resume PDF"
                 title="Download Teshera Kimbrough Resume (PDF)"
-                className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors"
               >
                 <Download size={16} />
                 Download Resume (PDF)
-              </a>
-              <a
-                href={pdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              </button>
+              <button
+                onClick={handleOpenPDF}
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors"
                 aria-label="View Teshera Kimbrough Resume PDF in browser"
                 title="View Resume in Browser"
-                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-colors"
               >
                 <ExternalLink size={16} />
                 View in Browser
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -63,7 +59,7 @@ const ResumePage = () => {
           </p>
         </div>
 
-        {/* PDF Embed Section */}
+        {/* PDF Access Section */}
         <div className="bg-gray-900 rounded-lg p-6 mb-8">
           <div className="flex items-center justify-center mb-6">
             <FileText size={64} className="text-blue-400 mb-4" />
@@ -72,31 +68,41 @@ const ResumePage = () => {
           <div className="text-center">
             <h2 className="text-xl font-semibold mb-4">Resume PDF</h2>
             <p className="text-gray-400 mb-6">
-              Click below to download or view the full resume in PDF format
+              Click below to view my complete professional resume
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href={pdfUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={handleOpenPDF}
+                className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg transition-colors justify-center font-semibold"
                 aria-label="Download Teshera Kimbrough Resume PDF"
                 title="Download Teshera Kimbrough Resume (PDF)"
-                className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg transition-colors justify-center font-semibold"
               >
                 <Download size={20} />
                 Download Resume (PDF)
-              </a>
+              </button>
+              <button
+                onClick={handleOpenPDF}
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors justify-center font-semibold"
+                aria-label="View Teshera Kimbrough Resume PDF in browser"
+                title="View Resume in Browser"
+              >
+                <ExternalLink size={20} />
+                View in Browser
+              </button>
+            </div>
+
+            {/* Fallback download link */}
+            <div className="mt-6 pt-4 border-t border-gray-800">
+              <p className="text-sm text-gray-500 mb-2">Having trouble viewing?</p>
               <a
                 href={pdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="View Teshera Kimbrough Resume PDF in browser"
-                title="View Resume in Browser"
-                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors justify-center font-semibold"
+                className="text-blue-400 hover:text-blue-300 underline text-sm"
+                aria-label="Direct link to download Teshera Kimbrough Resume PDF"
               >
-                <ExternalLink size={20} />
-                View in Browser
+                Click here to download the resume directly
               </a>
             </div>
           </div>
@@ -107,16 +113,6 @@ const ResumePage = () => {
           <p>This PDF contains my complete professional experience, skills, and project portfolio.</p>
         </div>
       </div>
-
-      {/* Print styles */}
-      <style dangerouslySetInnerHTML={{
-        __html: `
-          @media print {
-            body { margin: 0; padding: 0; }
-            .print\\:hidden { display: none !important; }
-          }
-        `
-      }} />
     </div>
   );
 };
