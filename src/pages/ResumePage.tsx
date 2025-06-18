@@ -3,7 +3,7 @@ import { ArrowLeft, Download, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ResumePage = () => {
-  const pdfUrl = 'https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/public/teshera-kimbrough-ai-resume.pdf';
+  const pdfUrl = 'https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/teshera-kimbrough-ai-resume.pdf';
 
   const handleOpenPDF = () => {
     window.open(pdfUrl, '_blank', 'noopener,noreferrer');

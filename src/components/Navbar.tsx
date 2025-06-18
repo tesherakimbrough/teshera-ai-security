@@ -21,7 +21,7 @@ const Navbar = () => {
     { href: '#contact', label: 'Contact' },
   ];
 
-  const pdfUrl = 'https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/public/teshera-kimbrough-ai-resume.pdf';
+  const pdfUrl = 'https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/teshera-kimbrough-ai-resume.pdf';
 
   const handleNavClick = (href: string, label: string) => {
     if (label === 'Resume') {
