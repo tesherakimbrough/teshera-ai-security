@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Download, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Resume = () => {
-  const pdfUrl = 'https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/teshera-kimbrough-ai-resume.pdf';
+  const pdfUrl = '/teshera-kimbrough-ai-resume.pdf';
   
   const handleDownloadPDF = () => {
     window.open(pdfUrl, '_blank', 'noopener,noreferrer');

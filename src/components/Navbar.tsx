@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
@@ -21,7 +22,7 @@ const Navbar = () => {
     { href: '#contact', label: 'Contact' },
   ];
 
-  const pdfUrl = 'https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/teshera-kimbrough-ai-resume.pdf';
+  const pdfUrl = '/teshera-kimbrough-ai-resume.pdf';
 
   const handleNavClick = (href: string, label: string) => {
     if (label === 'Resume') {
