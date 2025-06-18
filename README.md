@@ -1,81 +1,31 @@
-# 🔐 Teshera Secureworks — AI & Cybersecurity Portfolio
+# Teshera Kimbrough — AI Security Engineer
 
-This is the codebase powering **[tesherakimbrough.dev](https://tesherakimbrough.dev)** — a personal portfolio and hiring site built to showcase privacy-first AI tools and real-world cybersecurity experience.
+Building local-first security tools powered by AI, with privacy and integrity at the core.
 
-Built with integrity. Designed for impact.
+This portfolio showcases a collection of tools and projects focused on real-world cybersecurity challenges — from log analysis and AI-assisted alert triage to secure architecture patterns that respect user privacy.
 
----
+## Featured Projects
 
-## 🚀 Live Site
+### HavenAI Secure
+A local-first AI log analyzer that runs entirely in the browser. Detects suspicious log patterns using client-side AI models. Designed for security teams who value data privacy.
 
-🖥️ **Portfolio URL**  
-→ [https://tesherakimbrough.dev](https://tesherakimbrough.dev)
+### ThreatLens
+A real-time log visualization and analysis tool built with Streamlit. Helps simulate incidents and improve SOC readiness.
 
-📄 **Resume (PDF)**  
-→ [Download Resume (PDF)](https://tesherakimbrough.dev/Teshera%20Kimbrough%20AI%20Resume.pdf)
-
-🧭 **Interactive Version**  
-→ [https://tesherakimbrough.dev/resume](https://tesherakimbrough.dev/resume)
+### Sentinel Copilot
+An AI-assisted log triage prototype. Uses large language models to summarize logs and help identify critical security events faster.
 
 ---
 
-## 🧠 Featured Projects
+## About Me
 
-### ✅ [HavenAI Secure](https://havenai-secure.lovable.app)
-_Local-first AI log analyzer that runs entirely in the browser._
+I'm a self-driven Security Builder transitioning from IAM/GRC and Help Desk into AI & Cybersecurity Engineering. I create privacy-first tools that blend automation, clean code, and user trust.
 
-- Client-side AI model for suspicious log pattern detection
-- No cloud, no backend — privacy-first architecture
-- [Source Code](https://github.com/tesherakimbrough/havenai-secure)
+Let's build meaningful technology together — grounded in privacy, ethics, and usable security.
 
----
-
-### 🛡️ [ThreatLens](https://github.com/tesherakimbrough/threatlens)
-_Security monitoring tool that parses and simulates logs for threat detection._
-
-- Streamlit-based real-time visualization
-- Simulated SOC/IR workflows
-
----
-
-### 🧠 Sentinel Copilot (in progress)
-_AI-powered log triage assistant using mock data and summaries._
-
-- Python + Streamlit
-- Exploring LLM usage for threat triage support
-
----
-
-## 🔧 Tech Stack
-
-- Frontend: `Vite`, `React`, `TypeScript`, `Tailwind CSS`
-- Backend: _none_ — fully static site (privacy-focused)
-- Resume View: Embedded PDF with fallback PNG rendering
-- Deployment: [Lovable](https://lovable.dev) + GitHub Pages
-
----
-
-## 👋 About Me
-
-I'm **Teshera Kimbrough**, a self-driven developer with experience in:
-
-- **IAM, GRC, and security operations**
-- **Python scripting + AI/ML integration**
-- **Log analysis, threat detection, and secure development**
-
-This site is my resume — and my proof of work. I'm open to:
-- Full-time roles in AI security, GRC tooling, or dev-sec automation
-- Contract/freelance consulting
-- Collaborative project work
-
----
-
-## 📫 Contact
-
-- 🌐 [https://tesherakimbrough.dev](https://tesherakimbrough.dev)
-- 📧 hello@tesherakimbrough.dev
-- 💼 [LinkedIn](https://linkedin.com/in/tesherakimbrough)
-- 🐙 [GitHub](https://github.com/tesherakimbrough)
+👨‍💻 [Portfolio](https://tesherakimbrough.dev)  
+🔗 [LinkedIn](https://linkedin.com/in/tesherakimbrough)  
+📧 hello@tesherakimbrough.dev
 
 ---
 
