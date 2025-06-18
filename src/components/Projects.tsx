@@ -1,35 +1,35 @@
 
 import React from 'react';
-import { ExternalLink, Github, Shield, Brain, Eye } from 'lucide-react';
+import { ExternalLink, Github, Shield, Brain, Terminal } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "HavenAI",
-      description: "Privacy-first AI assistant that runs entirely on your device, ensuring your conversations never leave your computer.",
+      title: "HavenAI Secure",
+      description: "Local-first AI log analyzer that runs entirely in the browser. Detects suspicious log patterns using client-side AI models for security teams who value privacy.",
       icon: <Brain className="w-8 h-8 text-blue-400" />,
-      tags: ["AI", "Privacy", "Local-First", "Python"],
-      github: "https://github.com/tesherak/havenai",
-      demo: "https://havenai.demo.link",
+      tags: ["AI", "Privacy", "Security", "Local-First", "Frontend"],
+      github: "https://github.com/tesherakimbrough/HavenAI",
+      demo: "https://havenai-secure.lovable.app",
       status: "Active"
     },
     {
       title: "ThreatLens",
-      description: "Advanced cybersecurity monitoring tool that provides real-time threat detection and analysis for enterprise networks.",
+      description: "Real-time cybersecurity monitoring tool built with Streamlit. Parses and visualizes log files to simulate incident response and threat detection.",
       icon: <Shield className="w-8 h-8 text-red-400" />,
-      tags: ["Cybersecurity", "Monitoring", "Enterprise", "Real-time"],
-      github: "https://github.com/tesherak/threatlens",
-      demo: "https://threatlens.demo.link",
+      tags: ["Cybersecurity", "Monitoring", "Python", "Streamlit"],
+      github: "https://github.com/tesherakimbrough/ThreatLens",
+      demo: "https://threatlens.streamlit.app",
       status: "Active"
     },
     {
-      title: "SecureVision",
-      description: "Computer vision security system with edge computing capabilities for privacy-preserving surveillance solutions.",
-      icon: <Eye className="w-8 h-8 text-green-400" />,
-      tags: ["Computer Vision", "Edge Computing", "Security", "Privacy"],
-      github: "https://github.com/tesherak/securevision",
-      demo: "https://securevision.demo.link",
-      status: "Coming Soon"
+      title: "Security Log Analyzer",
+      description: "A lightweight CLI-based tool for scanning logs and detecting anomalies. Early experiment in Python using regex and basic alerting logic.",
+      icon: <Terminal className="w-8 h-8 text-purple-400" />,
+      tags: ["Python", "CLI", "Logs", "Regex"],
+      github: "https://github.com/tesherakimbrough/Security-Log-Analyzer",
+      demo: null,
+      status: "Archived"
     }
   ];
 
@@ -56,7 +56,7 @@ const Projects = () => {
                   <span className={`text-xs px-2 py-1 rounded-full ${
                     project.status === 'Active' 
                       ? 'bg-green-500/20 text-green-400' 
-                      : 'bg-yellow-500/20 text-yellow-400'
+                      : 'bg-gray-500/20 text-gray-400'
                   }`}>
                     {project.status}
                   </span>
@@ -83,15 +83,17 @@ const Projects = () => {
                   <Github size={16} />
                   Code
                 </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
-                >
-                  <ExternalLink size={16} />
-                  Demo
-                </a>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
+                  >
+                    <ExternalLink size={16} />
+                    Demo
+                  </a>
+                )}
               </div>
             </div>
           ))}
