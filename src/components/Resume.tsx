@@ -1,20 +1,13 @@
-
 import React from 'react';
 import { Download, ExternalLink } from 'lucide-react';
 
 const Resume = () => {
   const experience = [
     {
-      title: "Self-Driven Learning & Development",
-      company: "Personal Projects",
-      period: "2023 - Present",
-      description: "Currently self-training in cybersecurity and AI, building hands-on projects that demonstrate threat detection, log analysis, and secure development practices. Focus on privacy-first security tools and AI integration for SecOps."
-    },
-    {
       title: "AI & Cybersecurity Project Development",
       company: "Independent Work",
-      period: "2023 - Present",
-      description: "Developing practical security tools including HavenAI (local-first AI log analysis), ThreatLens (real-time monitoring), and Sentinel Copilot (AI-assisted log triage) to demonstrate real-world application of cybersecurity concepts."
+      period: "2025 - Present",
+      description: "Building self-driven projects focused on solving real-world cybersecurity challenges using AI and automation. Developed tools including HavenAI Secure (local-first log analysis), ThreatLens (real-time monitoring), and Sentinel Copilot (AI-assisted log triage). These projects demonstrate privacy-first design, secure development practices, and practical SecOps applications."
     },
     {
       title: "GRC Analyst",
@@ -44,9 +37,10 @@ const Resume = () => {
 
   const education = [
     {
-      degree: "Self-Directed Cybersecurity & AI Training",
-      school: "Online Learning & Hands-On Projects",
-      year: "2023 - Present"
+      degree: "Self-Guided Cybersecurity & AI Learning",
+      school: "Independent Study & Hands-On Projects",
+      year: "2025 - Present",
+      description: "Learning by building. Focused on cybersecurity fundamentals, secure coding, threat detection, and AI/ML for security through practical application and continuous self-study."
     }
   ];
 
@@ -111,8 +105,9 @@ const Resume = () => {
                 {education.map((edu, index) => (
                   <div key={index} className="bg-black/50 backdrop-blur-sm border border-gray-800 rounded-lg p-4">
                     <h4 className="text-lg font-semibold text-white mb-1">{edu.degree}</h4>
-                    <p className="text-blue-400 font-medium">{edu.school}</p>
-                    <p className="text-sm text-gray-400">{edu.year}</p>
+                    <p className="text-blue-400 font-medium mb-2">{edu.school}</p>
+                    <p className="text-sm text-gray-400 mb-2">{edu.year}</p>
+                    <p className="text-sm text-gray-300 leading-relaxed">{edu.description}</p>
                   </div>
                 ))}
               </div>
