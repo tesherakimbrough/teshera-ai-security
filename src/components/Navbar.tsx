@@ -48,13 +48,20 @@ const Navbar = () => {
     }`}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <a href="/" className="flex items-center" aria-label="Home">
+          <a 
+            href="/" 
+            className="flex items-center group" 
+            aria-label="Home"
+            title="Teshera Kimbrough – AI Security Engineer Portfolio"
+          >
             <div className={`px-4 py-2 rounded-lg transition-all duration-300 ${
               isScrolled ? 'bg-black/50 backdrop-blur-sm' : 'bg-black/70 backdrop-blur-sm'
-            }`}>
+            } group-hover:bg-black/80`}>
               <div className="text-white font-bold text-lg tracking-tight">
                 Teshera Kimbrough
-                <span className="block text-xs text-gray-400 font-normal mt-0.5">AI Security Engineer</span>
+                <span className="block text-xs text-gray-300 font-normal mt-0.5 group-hover:text-blue-300 transition-colors">
+                  AI Security Engineer
+                </span>
               </div>
             </div>
           </a>
