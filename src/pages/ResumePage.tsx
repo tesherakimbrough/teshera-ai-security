@@ -52,7 +52,7 @@ const ResumePage = () => {
                 Page 2
               </button>
               <a
-                href="https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/public/Teshera-Kimbrough-AI-Engineer%20(1).pdf"
+                href="https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/Teshera-Kimbrough-AI%20Engineer%20(1).pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors"
@@ -119,7 +119,7 @@ const ResumePage = () => {
             Download Page 2
           </button>
           <a
-            href="https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/public/Teshera-Kimbrough-AI-Engineer%20(1).pdf"
+            href="https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/Teshera-Kimbrough-AI%20Engineer%20(1).pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg transition-colors justify-center"
