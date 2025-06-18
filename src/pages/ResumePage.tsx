@@ -62,10 +62,11 @@ const ResumePage = () => {
             {/* PDF Preview iframe */}
             <div className="w-full bg-white rounded-lg overflow-hidden" style={{ height: '600px' }}>
               <iframe
-                src={`${pdfUrl}#toolbar=0`}
+                src={pdfUrl}
                 className="w-full h-full border-0"
                 title="Teshera Kimbrough Resume PDF Preview"
                 loading="lazy"
+                onError={() => console.log('PDF iframe failed to load')}
               />
             </div>
 
