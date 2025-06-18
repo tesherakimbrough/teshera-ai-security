@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowLeft, Download, Printer } from 'lucide-react';
+import { ArrowLeft, Download, Printer, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ResumePage = () => {
@@ -51,6 +51,15 @@ const ResumePage = () => {
                 <Download size={16} />
                 Page 2
               </button>
+              <a
+                href="https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/public/Teshera-Kimbrough-AI-Engineer%20(1).pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition-colors"
+              >
+                <FileText size={16} />
+                Download PDF
+              </a>
               <button
                 onClick={handlePrint}
                 className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-lg transition-colors"
@@ -109,6 +118,15 @@ const ResumePage = () => {
             <Download size={20} />
             Download Page 2
           </button>
+          <a
+            href="https://raw.githubusercontent.com/tesherakimbrough/teshera-secureworks/main/public/Teshera-Kimbrough-AI-Engineer%20(1).pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg transition-colors justify-center"
+          >
+            <FileText size={20} />
+            Download PDF
+          </a>
           <button
             onClick={handlePrint}
             className="flex items-center gap-2 bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg transition-colors justify-center"
