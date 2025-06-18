@@ -48,7 +48,7 @@ const About = () => {
               My work demonstrates practical applications of AI in cybersecurity through projects like HavenAI, ThreatLens, and Sentinel Copilot. I believe in learning by building—creating real tools that solve genuine security challenges while maintaining transparency and privacy.
             </p>
             
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               {skills.map((skill) => (
                 <div key={skill.name}>
                   <div className="flex justify-between mb-1">
@@ -63,6 +63,20 @@ const About = () => {
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="border-t border-gray-800 pt-6">
+              <p className="text-gray-300">
+                Connect with me on LinkedIn:{" "}
+                <a 
+                  href="https://www.linkedin.com/in/tesherakimbrough"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 transition-colors duration-200"
+                >
+                  linkedin.com/in/tesherakimbrough
+                </a>
+              </p>
             </div>
           </div>
           

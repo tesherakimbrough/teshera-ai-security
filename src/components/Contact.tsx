@@ -52,13 +52,13 @@ const Contact = () => {
                 <span>hello@tesherakimbrough.dev</span>
               </a>
               <a
-                href="https://linkedin.com/in/tesherakimbrough"
+                href="https://www.linkedin.com/in/tesherakimbrough"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-200 group"
               >
                 <Linkedin size={20} className="text-blue-400" />
-                <span>LinkedIn Profile</span>
+                <span>linkedin.com/in/tesherakimbrough</span>
               </a>
             </div>
 
