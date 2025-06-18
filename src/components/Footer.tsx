@@ -12,7 +12,8 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Teshera Kimbrough</h3>
             <p className="text-gray-400 leading-relaxed">
-              AI & Cybersecurity Developer building privacy-first solutions for a secure digital future.
+              AI & Cybersecurity Developer focused on privacy-first, local-first applications.
+              Honest work. Real skills. Built to protect what matters.
             </p>
           </div>
           
@@ -31,7 +32,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com/tesherak"
+                href="https://github.com/tesherakimbrough"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -39,7 +40,7 @@ const Footer = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/tesherakimbrough"
+                href="https://linkedin.com/in/tesherakimbrough"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
@@ -58,7 +59,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © {currentYear} Teshera Kimbrough. All rights reserved.
+            © {currentYear} Teshera Kimbrough. Built with integrity. All rights reserved.
           </p>
         </div>
       </div>
