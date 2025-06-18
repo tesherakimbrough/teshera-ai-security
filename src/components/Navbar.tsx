@@ -29,11 +29,15 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/b073c3f5-865d-445c-afeb-c085505e9e98.png" 
-              alt="Teshera SecureWorks Logo" 
-              className="h-16 w-auto transition-opacity duration-200 hover:opacity-80"
-            />
+            <div className={`p-2 rounded-lg transition-all duration-300 ${
+              isScrolled ? 'bg-black/50 backdrop-blur-sm' : 'bg-black/70 backdrop-blur-sm'
+            }`}>
+              <img 
+                src="/lovable-uploads/b073c3f5-865d-445c-afeb-c085505e9e98.png" 
+                alt="Teshera SecureWorks Logo" 
+                className="h-20 w-auto transition-opacity duration-200 hover:opacity-80"
+              />
+            </div>
           </a>
           
           {/* Desktop Navigation */}
