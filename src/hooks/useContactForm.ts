@@ -16,6 +16,13 @@ interface FormErrors {
   message?: string;
 }
 
+const sanitizeInput = (input: string): string => {
+  return input.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+              .replace(/javascript:/gi, '')
+              .replace(/on\w+\s*=/gi, '')
+              .trim();
+};
+
 export const useContactForm = () => {
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -30,23 +37,28 @@ export const useContactForm = () => {
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
 
-    if (!formData.name.trim()) {
+    const sanitizedName = sanitizeInput(formData.name);
+    const sanitizedEmail = sanitizeInput(formData.email);
+    const sanitizedSubject = sanitizeInput(formData.subject);
+    const sanitizedMessage = sanitizeInput(formData.message);
+
+    if (!sanitizedName) {
       newErrors.name = 'Name is required';
     }
 
-    if (!formData.email.trim()) {
+    if (!sanitizedEmail) {
       newErrors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+    } else if (!/\S+@\S+\.\S+/.test(sanitizedEmail)) {
       newErrors.email = 'Please enter a valid email address';
     }
 
-    if (!formData.subject.trim()) {
+    if (!sanitizedSubject) {
       newErrors.subject = 'Subject is required';
     }
 
-    if (!formData.message.trim()) {
+    if (!sanitizedMessage) {
       newErrors.message = 'Message is required';
-    } else if (formData.message.trim().length < 10) {
+    } else if (sanitizedMessage.length < 10) {
       newErrors.message = 'Message must be at least 10 characters long';
     }
 
@@ -56,17 +68,17 @@ export const useContactForm = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    const sanitizedValue = sanitizeInput(value);
     
-    // Clear error when user starts typing
+    setFormData(prev => ({ ...prev, [name]: sanitizedValue }));
+    
     if (errors[name as keyof FormErrors]) {
       setErrors(prev => ({ ...prev, [name]: undefined }));
     }
   };
 
   const submitForm = async (formData: FormData) => {
-    // Simulate API call - replace with actual implementation
-    const formAction = 'https://formspree.io/f/YOUR_FORM_ID'; // User should replace this
+    const formAction = 'https://formspree.io/f/YOUR_FORM_ID';
     
     try {
       const response = await fetch(formAction, {
@@ -106,7 +118,6 @@ export const useContactForm = () => {
           description: "Thank you for reaching out. I'll get back to you within 24 hours.",
         });
         
-        // Reset form
         setFormData({
           name: '',
           email: '',
