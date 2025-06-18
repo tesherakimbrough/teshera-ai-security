@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Download, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -79,7 +80,7 @@ const Resume = () => {
               onClick={handleDownloadPDF}
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2 justify-center"
               aria-label="Download Teshera Kimbrough Resume PDF"
-              title="Download Teshera Kimbrough Resume (PDF)"
+              title="Download Resume (PDF)"
             >
               <Download size={20} />
               Download Resume (PDF)
