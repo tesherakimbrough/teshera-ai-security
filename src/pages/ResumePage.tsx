@@ -62,7 +62,7 @@ const ResumePage = () => {
             {/* PDF Preview iframe */}
             <div className="w-full bg-white rounded-lg overflow-hidden" style={{ height: '600px' }}>
               <iframe
-                src={pdfUrl}
+                src={`${pdfUrl}#toolbar=0`}
                 className="w-full h-full border-0"
                 title="Teshera Kimbrough Resume PDF Preview"
                 loading="lazy"
@@ -82,19 +82,6 @@ const ResumePage = () => {
                 Click here to download the resume directly
               </a>
             </div>
-          </div>
-        </div>
-
-        {/* Image Backup Section */}
-        <div className="bg-gray-900 rounded-lg p-6">
-          <h2 className="text-xl font-semibold mb-4 text-center">📄 Resume Preview (Image Backup)</h2>
-          <div className="flex justify-center">
-            <img
-              src="/public/Teshera-Kimbrough-AI-Resume.png"
-              alt="Teshera Kimbrough Resume preview"
-              className="max-w-full h-auto rounded-lg shadow-lg"
-              style={{ maxHeight: '800px' }}
-            />
           </div>
         </div>
       </div>
