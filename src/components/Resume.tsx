@@ -17,10 +17,28 @@ const Resume = () => {
       description: "Developing practical security tools including HavenAI (local-first AI log analysis), ThreatLens (real-time monitoring), and Sentinel Copilot (AI-assisted log triage) to demonstrate real-world application of cybersecurity concepts."
     },
     {
-      title: "GRC & IAM Analyst",
-      company: "Professional Work",
-      period: "2021 - 2022",
-      description: "Conducted security audits and access reviews aligned with ISO 27001 and NIST 800-53. Maintained identity and access controls (IAM) using tools like Okta and Azure AD. Assisted in writing and reviewing GRC documentation for HIPAA and GDPR compliance. Worked with teams to assess third-party risk and enforce security policies."
+      title: "GRC Analyst",
+      company: "Wellstar Health System",
+      period: "Jun 2024 - Mar 2025",
+      description: "Conducted third-party vendor audits and HIPAA/NIST compliance reviews. Automated GRC reports with Python, Google Sheets, and Tableau. Delivered dashboards and workflows that increased reporting accuracy and speed."
+    },
+    {
+      title: "Technology Operations Analyst",
+      company: "Wells Fargo",
+      period: "Nov 2022 - May 2024",
+      description: "Managed IAM and SoD controls across 20+ internal apps. Automated ServiceNow RBAC workflows. Partnered with security engineers on policy design for audit readiness."
+    },
+    {
+      title: "Cybersecurity Analyst",
+      company: "BlueLine Technologies",
+      period: "Sep 2021 - Mar 2022",
+      description: "Responded to alerts, triaged endpoint issues, and reviewed IDS logs. Created Python scripts for custom Splunk parsing. Supported SOC team with threat detection and documentation."
+    },
+    {
+      title: "Technical Support Advisor",
+      company: "Apple",
+      period: "Jun 2017 - Jul 2021",
+      description: "Provided tier 1 and 2 support for Apple hardware/software. Acted as Subject Matter Expert (SME) for education/business cases. Led quality improvement initiatives and trained junior staff."
     }
   ];
 
