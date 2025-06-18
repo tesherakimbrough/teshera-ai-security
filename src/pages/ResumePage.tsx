@@ -59,18 +59,35 @@ const ResumePage = () => {
               View Full Resume (PDF)
             </button>
 
-            {/* PDF Preview iframe */}
+            {/* PDF Preview - Using object tag as fallback */}
             <div className="w-full bg-white rounded-lg overflow-hidden" style={{ height: '600px' }}>
-              <iframe
-                src={pdfUrl}
-                className="w-full h-full border-0"
+              <object
+                data={pdfUrl}
+                type="application/pdf"
+                className="w-full h-full"
                 title="Teshera Kimbrough Resume PDF Preview"
-                loading="lazy"
-                onError={() => console.log('PDF iframe failed to load')}
-              />
+              >
+                {/* Fallback content when PDF can't be displayed */}
+                <div className="w-full h-full flex flex-col items-center justify-center bg-gray-100 text-gray-800">
+                  <div className="text-center p-8">
+                    <div className="mb-4">
+                      <ExternalLink size={48} className="mx-auto text-gray-500" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-2">PDF Preview Not Available</h3>
+                    <p className="text-gray-600 mb-4">Your browser doesn't support PDF preview in this view.</p>
+                    <button
+                      onClick={handleOpenPDF}
+                      className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors flex items-center gap-2 mx-auto"
+                    >
+                      <ExternalLink size={20} />
+                      Open PDF in New Tab
+                    </button>
+                  </div>
+                </div>
+              </object>
             </div>
 
-            {/* Fallback download link */}
+            {/* Download link */}
             <div className="mt-6 pt-4 border-t border-gray-800">
               <p className="text-sm text-gray-500 mb-2">Having trouble viewing the PDF?</p>
               <a
