@@ -1,33 +1,95 @@
-# Teshera Kimbrough — AI Security Engineer
+# 🔐 Teshera AI Security
 
-Building local-first security tools powered by AI, with privacy and integrity at the core.
+**Building Ethical AI Security Tools for the Real World**
 
-This portfolio showcases a collection of tools and projects focused on real-world cybersecurity challenges — from log analysis and AI-assisted alert triage to secure architecture patterns that respect user privacy.
+[![Built with Lovable](https://lovable.dev/badge.svg)](https://lovable.dev/projects/your-lovable-project-id)
+![GitHub Repo stars](https://img.shields.io/github/stars/tesherakimbrough/teshera-ai-security?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/tesherakimbrough/teshera-ai-security)
+![Made with Python](https://img.shields.io/badge/made%20with-Python-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/ui-Streamlit-orange?logo=streamlit)
 
-## Featured Projects
-
-### HavenAI Secure
-A local-first AI log analyzer that runs entirely in the browser. Detects suspicious log patterns using client-side AI models. Designed for security teams who value data privacy.
-
-### ThreatLens
-A real-time log visualization and analysis tool built with Streamlit. Helps simulate incidents and improve SOC readiness.
-
-### Sentinel Copilot
-An AI-assisted log triage prototype. Uses large language models to summarize logs and help identify critical security events faster.
+Teshera AI Security is a portfolio of AI-powered, privacy-first security tools focused on client-side log analysis, threat detection, and clean, trustworthy design. Everything is built with a local-first philosophy — no clouds, no leaks.
 
 ---
 
-## About Me
+## 🚀 Projects
 
-I'm a self-driven Security Builder transitioning from IAM/GRC and Help Desk into AI & Cybersecurity Engineering. I create privacy-first tools that blend automation, clean code, and user trust.
+### 🌐 [HavenAI Secure](https://havenai-secure.lovable.app)
+An AI-powered log analyzer that runs fully in the browser — no cloud keys or backend required. Detects anomalies, summarizes logs with mock AI, and helps teams act faster.
 
-Let's build meaningful technology together — grounded in privacy, ethics, and usable security.
+- 🧠 AI threat insights (client-side)
+- 📊 Log parsing and chart visualizations
+- 🔒 No data leaves your machine
 
-👨‍💻 [Portfolio](https://tesherakimbrough.dev)  
-🔗 [LinkedIn](https://linkedin.com/in/tesherakimbrough)  
-📧 hello@tesherakimbrough.dev
+➡ [View Project on GitHub](https://github.com/tesherakimbrough/havenai)
 
 ---
+
+### 🛡 [ThreatLens](https://github.com/tesherakimbrough/threatlens)
+A Streamlit-based tool for simulating SOC analysis workflows. Upload logs and analyze events in real time with bar charts, summaries, and filtering.
+
+- 🧪 Built for security analysts
+- 🧰 Log breakdown and IP mapping
+- 📁 Built with Pandas, Matplotlib, Streamlit
+
+---
+
+### 🤖 [Sentinel Copilot](https://github.com/tesherakimbrough/sentinel-copilot)
+An experiment in AI-assisted triage using fake summaries and event tagging. Designed to simulate how AI could assist real-time incident response teams.
+
+---
+
+## 🧠 Tech Stack
+
+- **Frontend:** TypeScript, TailwindCSS, React (Lovable)
+- **AI + Data:** Python, Streamlit, Pandas, Scikit-learn
+- **Security:** Privacy-by-default principles, zero backend
+- **Other:** GitHub, Vercel, Canva, Figma, Lovable.dev
+
+---
+
+## 💼 About Me
+
+**Teshera Kimbrough**  
+AI & Security Developer | Privacy-First Engineer | GRC to Builder
+
+I'm a self-driven career-changer with a background in GRC, IAM, and helpdesk — now building real-world security tools powered by AI. My projects are honest, intentional, and designed to show how much can be built with focus and integrity.
+
+- 🌍 [tesherakimbrough.dev](https://www.tesherakimbrough.dev)
+- 💌 hello@tesherakimbrough.dev
+- 🔗 [linkedin.com/in/tesherakimbrough](https://www.linkedin.com/in/tesherakimbrough)
+
+---
+
+## 📄 Resume
+
+- 📥 [Download PDF Resume](https://tesherakimbrough.dev/Teshera%20Kimbrough%20AI%20Resume.pdf)
+- 🔎 [View Full Resume & Security Review](https://tesherakimbrough.dev/resume)
+
+---
+
+## 💡 Philosophy
+
+> "Build real, show up with integrity, and stay local whenever possible."
+
+---
+
+## 🤝 I'm Open To
+
+- Full-time security or AI engineering roles
+- Contract work for privacy-first apps
+- Collaboration with startups or builders
+- Mentorship in security + career shifting
+
+---
+
+### ⭐ Let’s Connect
+
+If my work resonates with you — reach out. I’m ready to join a mission-driven team or create something valuable together.
+
+---
+
+_This portfolio is 100% self-built and reflects a commitment to showing, not telling._
 
 **Made with clarity. Built to protect what matters.**
 
