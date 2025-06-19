@@ -19,7 +19,7 @@ const Projects = () => {
       icon: <Shield className="w-8 h-8 text-red-400" />,
       tags: ["Cybersecurity", "Monitoring", "Python", "Streamlit"],
       github: "https://github.com/tesherakimbrough/ThreatLens",
-      demo: "https://threatlens.streamlit.app",
+      demo: "https://threatlens-demo.streamlit.app/",
       status: "Active"
     },
     {
