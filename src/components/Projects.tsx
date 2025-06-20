@@ -23,7 +23,7 @@ const Projects = () => {
     },
     {
       title: "Loglings Cozy Security Adventures",
-      description: "Cozy security adventures in log analysis. An interactive learning platform that makes cybersecurity concepts approachable and engaging through gamified log investigation scenarios.",
+      description: "A cozy cybersecurity adventure game that helps players learn log analysis through story-driven exploration and friendly characters.",
       icon: <Zap className="w-8 h-8 text-yellow-400" />,
       tags: ["Education", "Security", "Interactive", "Learning"],
       github: "https://github.com/tesherakimbrough/loglings-cozy-security-adventures",
