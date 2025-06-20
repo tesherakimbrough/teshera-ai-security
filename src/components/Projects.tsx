@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ExternalLink, Github, Shield, Brain, Terminal } from 'lucide-react';
+import { ExternalLink, Github, Shield, Brain, Terminal, Zap } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -20,6 +20,15 @@ const Projects = () => {
       tags: ["Cybersecurity", "Monitoring", "Python", "Streamlit"],
       github: "https://github.com/tesherakimbrough/ThreatLens",
       demo: "https://threatlens-demo.streamlit.app/",
+      status: "Active"
+    },
+    {
+      title: "Loglings",
+      description: "Cozy security adventures in log analysis. An interactive learning platform that makes cybersecurity concepts approachable and engaging through gamified log investigation scenarios.",
+      icon: <Zap className="w-8 h-8 text-yellow-400" />,
+      tags: ["Education", "Security", "Interactive", "Learning"],
+      github: null,
+      demo: "https://loglings-cozy-security-adventures.lovable.app/",
       status: "Active"
     },
     {
